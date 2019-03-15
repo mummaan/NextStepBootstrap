@@ -11,26 +11,38 @@
     <!-- Custom Styles -->
 <link rel="stylesheet" href="custom.css">
 
-    <title>Login</title>
+    <title>Register</title>
   </head>
   <body>
+ 
  <!-- NAVIGAION --> 
- <nav class="navbar-light bg-light">
-  <ul class="nav justify-content-end navbar">
-  <a class="navbar-brand mr-auto" href="#">Next Step Go</a>
-  <li class="nav-item">
-    <a class="nav-link" href="#">ABOUT US</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">SUPPORT</a>
-  </li>
-	<button class="btn btn-outline-success my-2 my-sm-0 ml-3 registernav" type="button">SIGN IN</button>
-</ul>
+ <nav class="navbar navbar-expand-md navbar-light bg-light">
+
+<!-- NAV BRAND -->
+  <a class="navbar-brand" href="#">Next Step Go</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+<!-- NAV LINKS -->
+  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">ABOUT US<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">SUPPORT</a>
+      </li>
+      <li>
+      <a href="register.html"><div class="nav-item btn btn-outline-success registernav">REGISTER
+		  </div></a></li>
+    </ul>
+  </div>
 </nav>
+
    <div class="container">
   <div class="py-5 text-left">
-    <img class="d-block mx-auto mb-4" src="/docs/4.3/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
-    <h1 class="text-success">Lets Get Started.</h1>
+    <h1 class="text-success mt-5">Lets Get Started.</h1>
     <p class="lead">Begin by telling us a litte about your business. You can fill in the details later.</p>
   </div>
 
@@ -74,7 +86,6 @@
             <div class="invalid-feedback">
              Password is required.
             </div>
-            <small class="form-text text-muted">Must have 8 characters, 1 uppercase letter, and 1 special character.</small>
           </div>
           <div class="col-md-6 mb-3">
             <label for="lastName">Confirm Password</label>
@@ -82,6 +93,9 @@
             <div class="invalid-feedback">
               Password confirmation is required.
             </div>
+          </div>
+          <div class="col-12 pt-0 mb-2 negmargin">
+          	<small class="form-text text-muted">Must be 8 characters, 1 uppercase letter, and 1 special character.</small>
           </div>
         </div>
         	<div class="mb-3">

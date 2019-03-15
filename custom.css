@@ -41,8 +41,8 @@ nav {
     color: #2f7eb9; }
 
 .registernav {
-  padding-bottom: 3px;
-  margin-top: -3px !important; }
+  padding-top: 8px;
+  padding-bottom: 5px; }
 
 /* Login Page */
 .login-bg {
@@ -107,9 +107,17 @@ nav {
 .mastfoot {
   margin-top: 10% !important; }
 
+.negmargin {
+  margin-top: -15px; }
+
 /*Footer */
 footer {
   padding: 10px; }
 
 .footerlogo {
   text-align: right; }
+
+/* Media Breakpoints */
+@media (min-width: 768px) {
+  .registernav {
+    margin-left: 30px; } }
