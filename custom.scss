@@ -66,7 +66,7 @@ nav{
 	padding-bottom: 5px;
 }
 
-/* Login Page */
+/**************************** Login Page *********************************/
 .login-bg {
 	height: 85%;
 	background-image: url($greengraphic);
@@ -74,12 +74,14 @@ nav{
 }
 
 .login-panel{
-	background-color: white;
 	padding: 30px;
-	margin-top: 10%;
-	-webkit-box-shadow: 0px 9px 16px 1px rgba(0,0,0,0.17);
-	-moz-box-shadow: 0px 9px 16px 1px rgba(0,0,0,0.17);
-	box-shadow: 0px 9px 16px 1px rgba(0,0,0,0.17);
+	border: 1px solid white;
+	background-color: rgba(255,255,255,0.10);
+}
+
+.login-panel-bottom {
+	background-color: rgb(250,250,250);
+	padding: 50px;
 }
 
 .login-row {
@@ -89,13 +91,32 @@ nav{
 .loginheader{
 	text-align: center;
 	margin-bottom: 40px;
+	color: white;
 }
 
-.passwordhelp{
-	color: $mutedgrey;
+.passwordhelp {
+	color: rgba(118,118,118,1.00);
 	&:hover {
-		color: lighten($mutedgrey, 30% );
+		color: darken($mutedgrey, 30% );
 	}
+}
+
+.min-imput{
+	border: none;
+	border-bottom: 1px solid $mutedgrey;
+	border-radius: 0px;
+	background-color: rgba(255,255,255,0.00);
+	&:focus{
+		background-color: rgba(255,255,255,0.20);
+		border: none;
+		border-bottom: 1px solid white;
+		box-shadow: none;
+	}
+}
+
+.loginlabel{
+	color: white;
+	font-weight: 500;
 }
 
 .submitbutton {
@@ -110,12 +131,6 @@ nav{
 
 .registerbutton {
 	width: 100%;
-	background-color: $primary;
-	&:hover {
-        background-color: darken( $primary, 10% );
-    }
-	border: none;
-	margin-top: 20px;
 }
 
 .cued-attr{
@@ -128,6 +143,33 @@ nav{
 .cued-logo{
 	width: 40px;
 	padding-right: 15px;
+}
+
+.cover-container{
+	//padding-top: 50px;
+}
+
+.greenbg{
+	background-image: url($greengraphic);
+	background-size: 110% 120%;
+	height: 100%;
+}
+
+.loginfooter {
+	background-color: rgba(0,0,0,0.00)!important;
+	text-align: right;
+	float: right;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.footerimgsm{
+	width: 30px;
+}
+
+.poweredby{
+	font-size: 12px;
 }
 
 

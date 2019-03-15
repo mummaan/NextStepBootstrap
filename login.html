@@ -14,48 +14,65 @@
     <title>Login</title>
   </head>
   <body>
-<div class="cover-container login-bg d-flex w-100 h-100 mx-auto flex-column">
- <nav class="navbar-light bg-light">
-  <ul class="nav justify-content-end navbar">
-  <a class="navbar-brand mr-auto" href="#">Next Step Go</a>
-  <li class="nav-item">
-    <a class="nav-link" href="#">ABOUT US</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">SUPPORT</a>
-  </li>
-	<button class="btn btn-outline-success my-2 my-sm-0 registernav" type="button">REGISTER</button>
-</ul>
+  <div class="greenbg">
+
+ <!-- NAVIGAION --> 
+ <nav class="navbar mb-5 navbar-expand-md navbar-light bg-light">
+
+<!-- NAV BRAND -->
+ 
+  <a class="navbar-brand" href="#">Next Step Go</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+<!-- NAV LINKS -->
+  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link mr-2" href="#">ABOUT US<span class="sr-only">(current)</span></a>
+      </li>
+      <li class=	"nav-item">
+        <a class="nav-link" href="#">SUPPORT</a>
+      </li>
+      <li><a href="login.html"><div class=" nav-item btn btn-outline-success registernav">LOG IN
+		  </div></a></li>
+    </ul>
+  </div>
 </nav>
+  <!-- END OF NAV -->
+  
+   <div class="row"></div>
     <div class="row justify-content-center">
-    	<div class="col-4 login-panel">
+    	<div class="col-lg-5 col-md-6 col-sm-8 login-panel">
     		<h1 class="loginheader">Log In</h1>
     		<form>
   				<div class="form-group">
-  				  <label for="exampleInputEmail1">Email address</label>
-  				  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  				  <label for="exampleInputEmail1" class="loginlabel">Email address</label>
+  				  <input type="email" class="form-control min-imput" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
   				  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   				</div>
   				<div class="form-group">
-  				  <label for="exampleInputPassword1">Password</label>
-  				  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  				  <label for="exampleInputPassword1" class="loginlabel">Password</label>
+  				  <input type="password" class="form-control min-imput" id="exampleInputPassword1" placeholder="">
   				   <a href="#"><small class="form-text passwordhelp">Forgot Password?</small></a>
   				</div>
   				<button type="submit" class="btn btn-primary submitbutton">Submit</button>
-  				<button type="button" class="btn btn-primary registerbutton">Not a Member? Create an Account</button>
 			</form>
     	</div>
     </div>
-
-  <footer class="mastfoot mt-auto">
-    <div class="row justify-content-end">
-    <div class="col-2 footerlogo">
-    	<p class="cued-attr">Powered By</p>
-    	<img class="cued-logo" src="images/cuedin-logo.svg">
+    <div class= "row justify-content-center">
+    	<div class="col-lg-5 col-md-6 col-sm-8 login-panel-bottom">
+        	<a href="register.html"><div class="btn btn-outline-secondary registerbutton">Not a Member? Create an Account</div></a>
+    	</div>
     </div>
-    </div>
-  </footer>
 </div>
+<!-- FOOTER -->
+  <footer class="loginfooter">
+    <span class= "d-inline mr-2 text-white-50 poweredby">Powered By </span>
+    	<img class="footerimgsm" src="images/cuedin-logo.svg">    
+</footer>
+	 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

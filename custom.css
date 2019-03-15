@@ -44,31 +44,48 @@ nav {
   padding-top: 8px;
   padding-bottom: 5px; }
 
-/* Login Page */
+/**************************** Login Page *********************************/
 .login-bg {
   height: 85%;
   background-image: url("images/loginbg.jpg");
   background-size: 110% 120%; }
 
 .login-panel {
-  background-color: white;
   padding: 30px;
-  margin-top: 10%;
-  -webkit-box-shadow: 0px 9px 16px 1px rgba(0, 0, 0, 0.17);
-  -moz-box-shadow: 0px 9px 16px 1px rgba(0, 0, 0, 0.17);
-  box-shadow: 0px 9px 16px 1px rgba(0, 0, 0, 0.17); }
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.1); }
+
+.login-panel-bottom {
+  background-color: #fafafa;
+  padding: 50px; }
 
 .login-row {
   height: 100%; }
 
 .loginheader {
   text-align: center;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  color: white; }
 
 .passwordhelp {
-  color: #3E3E3E; }
+  color: #767676; }
   .passwordhelp:hover {
-    color: #8b8b8b; }
+    color: black; }
+
+.min-imput {
+  border: none;
+  border-bottom: 1px solid #3E3E3E;
+  border-radius: 0px;
+  background-color: rgba(255, 255, 255, 0); }
+  .min-imput:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-bottom: 1px solid white;
+    box-shadow: none; }
+
+.loginlabel {
+  color: white;
+  font-weight: 500; }
 
 .submitbutton {
   width: 100%;
@@ -79,12 +96,7 @@ nav {
     background-color: #689f32; }
 
 .registerbutton {
-  width: 100%;
-  background-color: #102B3F;
-  border: none;
-  margin-top: 20px; }
-  .registerbutton:hover {
-    background-color: #060f16; }
+  width: 100%; }
 
 .cued-attr {
   display: inline;
@@ -95,6 +107,25 @@ nav {
 .cued-logo {
   width: 40px;
   padding-right: 15px; }
+
+.greenbg {
+  background-image: url("images/loginbg.jpg");
+  background-size: 110% 120%;
+  height: 100%; }
+
+.loginfooter {
+  background-color: rgba(0, 0, 0, 0) !important;
+  text-align: right;
+  float: right;
+  position: absolute;
+  bottom: 0;
+  right: 0; }
+
+.footerimgsm {
+  width: 30px; }
+
+.poweredby {
+  font-size: 12px; }
 
 /* Register */
 .gearsimg {
