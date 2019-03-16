@@ -13,6 +13,7 @@ body, html {
 	height: 100%;
 }
 
+
 /* COLORS */
 
   $maingreen: #83bf4a;
@@ -281,6 +282,134 @@ footer{
 .editpost {
 	color: rgba(164,164,164,1.00);
 	font-size: 9px;
+}
+
+.scrollcards{
+	background-color: $ltgrey;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.profile-img{
+	border-radius: 100px;
+	width: 70%;
+	margin: auto;
+}
+
+.active-blue{
+	color: $medblue!important;
+}
+.bg-grey{
+	background-color: $dkgrey;
+}
+
+.dash-wt-link {
+	color: white!important;
+}
+
+.msg-card {
+	background-color: $maingreen;
+	color: white;
+}
+
+.msg-body{
+	min-height: 0;
+}
+
+.bluelink{
+	color: $medblue;
+	&:hover {
+        color: lighten($medblue, 20%);
+    }
+}
+
+.text-maingreen{
+	color: $maingreen;
+}
+
+//Calendar
+
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: $medblue;
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  list-style: none
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+.days li .active {
+  padding: 5px;
+  background: $medblue;
+  color: white !important
+}
+
+.cal-date{
+	color: $medblue;
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+  .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li, .days li {width: 12.5%;}
+  .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays li, .days li {width: 12.2%;}
 }
 
 /******************************Career Clusters ********************************/
