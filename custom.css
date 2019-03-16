@@ -36,23 +36,21 @@ nav {
   padding-top: 11px; }
 
 .nav-link {
-  color: #102B3F;
-   letter-spacing: .5px;}
+  color: #102B3F; }
   .nav-link:hover {
-    color: #35858e; }
+    color: #2f7eb9; }
 
 .registernav {
   padding-top: 8px;
   padding-bottom: 5px; }
 
-.registernav2 {
-  width: 20%;
-  background-color: #35858e;
-  border: none;
-  }
-  .registerbutton2:hover {
-    background-color: #2d7477;
-}
+.nextstepgo-logo-nav {
+  width: 170px;
+  padding-right: 15px; }
+
+.cued-logo-nav {
+  width: 32px;
+  padding-right: 5px; }
 
 /* Login Page */
 .login-bg {
@@ -60,20 +58,41 @@ nav {
   background-image: url("images/loginbg.jpg");
   background-size: 110% 120%; }
 
-.login-panel {
-  background-color: white;
-  padding: 30px;
-  margin-top: 10%;
-  -webkit-box-shadow: 0px 9px 16px 1px rgba(0, 0, 0, 0.17);
-  -moz-box-shadow: 0px 9px 16px 1px rgba(0, 0, 0, 0.17);
-  box-shadow: 0px 9px 16px 1px rgba(0, 0, 0, 0.17); }
-
 .login-row {
   height: 100%; }
 
+.login-panel {
+  padding: 30px;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.1); }
+
+.login-panel-bottom {
+  background-color: #fafafa;
+  padding: 50px; }
+
 .loginheader {
   text-align: center;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  color: white; }
+
+.min-imput {
+  border: none;
+  border-bottom: 1px solid #3E3E3E;
+  border-radius: 0px;
+  background-color: rgba(255, 255, 255, 0); }
+  .min-imput:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-bottom: 1px solid white;
+    box-shadow: none; }
+
+.loginfooter {
+  background-color: rgba(0, 0, 0, 0) !important;
+  text-align: right;
+  float: right;
+  position: absolute;
+  bottom: 0;
+  right: 0; }
 
 .passwordhelp {
   color: #3E3E3E; }
@@ -88,47 +107,35 @@ nav {
   .submitbutton:hover {
     background-color: #689f32; }
 
-.submitbutton2 {
-  width: 100%;
-  background-color: #102B3F;
-  border: none;
-  margin-top: 20px; }
-  .submitbutton2:hover {
-    background-color: #060f16; }
-
 .registerbutton {
   width: 100%;
   background-color: #102B3F;
   border: none;
-  margin-top: 20px; }
+  margin-top: 20px;
+  padding-bottom: 3px; }
   .registerbutton:hover {
     background-color: #060f16; }
 
-.registerbutton2 {
-  width: 10%;
-  background-color: #35858e;
+.loginlabel {
+  color: white;
+  font-weight: 500; }
+
+.submitbutton {
+  width: 100%;
+  background-color: #81C341;
   border: none;
-  }
-  .topregisterbutton:hover {
-    background-color: #2d7477;
-}
+  margin-top: 20px; }
+  .submitbutton:hover {
+    background-color: #689f32; }
 
 .cued-attr {
   display: inline;
   color: white;
-  font-size: 15px;
+  font-size: 14px;
   padding-right: 7px; }
 
 .cued-logo {
-  width: 45px;
-  padding-right: 15px; }
-
-.cued-logo2 {
-  width: 32px;
-  padding-right: 5px; }
-
-.nextstepgo-logo {
-  width: 200px;
+  width: 40px;
   padding-right: 15px; }
 
 /* Register */
@@ -139,35 +146,11 @@ nav {
 .footerimgmd {
   width: 50px; }
 
-.nav-link2 {
-  color: #102B3F;
-   letter-spacing: .5px;}
-  .nav-link:hover {
-    color: #35858e; }
-
 .mastfoot {
   margin-top: 10% !important; }
 
 .negmargin {
   margin-top: -15px; }
-
-.topregisterbutton {
-  width: 100%;
-  background-color: #35858e;
-  border: none;
-  }
-  .topregisterbutton:hover {
-    background-color: #2d7477;
-}
-
-.darkblue {
-    color: #0c293d;
-}
-
-.green {
-    color: #83bf4a;
-}
-
 
 /*Footer */
 footer {
@@ -175,10 +158,6 @@ footer {
 
 .footerlogo {
   text-align: right; }
-
-.copyright {
-    text-align: left;
-}
 
 /* Media Breakpoints */
 @media (min-width: 768px) {

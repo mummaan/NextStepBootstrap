@@ -66,6 +66,16 @@ nav{
 	padding-bottom: 5px;
 }
 
+
+.nextstepgo-logo-nav {
+  width: 170px;
+  padding-right: 15px; }
+
+.cued-logo-nav {
+  width: 32px;
+  padding-right: 5px; 
+}
+
 /* Login Page */
 .login-bg {
 	height: 85%;
@@ -73,23 +83,41 @@ nav{
 	background-size: 110% 120%;
 }
 
-.login-panel{
-	background-color: white;
-	padding: 30px;
-	margin-top: 10%;
-	-webkit-box-shadow: 0px 9px 16px 1px rgba(0,0,0,0.17);
-	-moz-box-shadow: 0px 9px 16px 1px rgba(0,0,0,0.17);
-	box-shadow: 0px 9px 16px 1px rgba(0,0,0,0.17);
-}
-
 .login-row {
 	height: 100%;
 }
 
+.login-panel{
+	padding: 30px;
+	border: 1px solid white;
+	background-color: rgba(255,255,255,0.10);
+}
+
+.login-panel-bottom {
+	background-color: rgb(250,250,250);
+	padding: 50px;
+}
+
+
 .loginheader{
 	text-align: center;
 	margin-bottom: 40px;
+	color: white;
 }
+
+.min-imput{
+	border: none;
+	border-bottom: 1px solid $mutedgrey;
+	border-radius: 0px;
+	background-color: rgba(255,255,255,0.00);
+	&:focus{
+		background-color: rgba(255,255,255,0.20);
+		border: none;
+		border-bottom: 1px solid white;
+		box-shadow: none;
+	}
+}
+
 
 .passwordhelp{
 	color: $mutedgrey;
@@ -110,9 +138,25 @@ nav{
 
 .registerbutton {
 	width: 100%;
-	background-color: $primary;
+			background-color: $primary;
 	&:hover {
         background-color: darken( $primary, 10% );
+    }
+	border: none;
+	margin-top: 20px;
+	padding-bottom: 3px;
+}
+
+.loginlabel{
+	color: white;
+	font-weight: 500;
+}
+
+.submitbutton {
+	width: 100%;
+	background-color: $success;
+	&:hover {
+        background-color: darken( $success, 10% );
     }
 	border: none;
 	margin-top: 20px;
