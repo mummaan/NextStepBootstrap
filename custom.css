@@ -148,6 +148,40 @@ footer {
 .footerlogo {
   text-align: right; }
 
+/* Dashboard */
+.welcome-business {
+  font-size: 20px;
+  font-weight: 300; }
+
+.bus-name {
+  padding-left: 10px; }
+
+.card-body {
+  min-height: 300px; }
+
+.flex-nowrap {
+  overflow-x: scroll; }
+
+.referrals-badge {
+  width: 100%; }
+
+.editpost {
+  color: #a4a4a4;
+  font-size: 9px; }
+
+/*Career Clusters */
+.finance-cluster {
+  color: #25652f; }
+
+.marketing-cluster {
+  color: #67080a; }
+
+.artcomm-cluster {
+  color: #1c236b; }
+
+.info-cluster {
+  color: #00798d; }
+
 /* Media Breakpoints */
 @media (min-width: 768px) {
   .registernav {

@@ -202,6 +202,51 @@ footer{
 }
 
 
+/* Dashboard */
+
+.welcome-business { 
+	font-size: 20px;
+	font-weight: 300;
+}
+
+.bus-name {
+	padding-left: 10px;	
+}
+
+.card-body {
+    min-height: 300px;
+}
+
+.flex-nowrap{
+	overflow-x: scroll;
+}
+
+.referrals-badge{
+	width: 100%;
+}
+
+.editpost {
+	color: rgba(164,164,164,1.00);
+	font-size: 9px;
+}
+
+/*Career Clusters */
+.finance-cluster{
+	color:rgba(37,101,47,1.00);
+}
+
+.marketing-cluster{
+	color:rgba(103,8,10,1.00);
+}
+
+.artcomm-cluster{
+	color:rgba(28,35,107,1.00);
+}
+
+.info-cluster {
+	color:rgba(0,121,141,1.00);
+}
+
 /* Media Breakpoints */
 
 // Medium devices (tablets, 768px and up)
