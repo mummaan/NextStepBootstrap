@@ -14,11 +14,46 @@ body, html {
 }
 
 /* COLORS */
-$success: #81C341;
-$primary: #102B3F;
-$mutedgrey: #3E3E3E;
 
-/* FONTS */
+  $maingreen: #83bf4a;
+  $mainblue:  #0c293d;
+  $medblue: #4584b5;
+  $ltblue: #94c8d5;
+  $greenblue: #35858e;
+  $ltgrey: #d6d7dd;
+  $dkgrey: #434c55;
+
+/* Buttons */
+
+// Regular
+
+.btn-maingreen{
+	background-color: $maingreen!important;
+	color: white;
+}
+
+.btn-mainblue{
+	background-color: $mainblue!important;
+	color: white;
+}
+
+// Outline
+	  
+.btn-maingreen-outline {
+	background-color: white;
+	border: 1px solid $maingreen!important;
+	color: $maingreen;
+}
+
+.btn-mainblue-outline {
+	background-color: white;
+	border: 1px solid $mainblue!important;
+	color: $mainblue;
+}
+
+
+
+/**************************** FONTS **************************/
 
 h1, h2, h3, h4, h5, h6{
 	font-family: forma-djr-text, sans-serif;
@@ -32,14 +67,16 @@ p {
 
 a {
 	text-decoration: none;
+	color: $mainblue;
 	&:hover{
-		color: lighten( $primary, 20% );
+		color: lighten( $mainblue, 20% );
 		text-decoration: none;
 	}
+	
 }
 
 
-/* Navbar */
+/************************* Navbar *****************************/
 .navbar.navlogin.navbar-default {
 	margin-bottom: 0px;
 }
@@ -55,16 +92,28 @@ nav{
 	padding-top: 11px;
 }
 .nav-link{
-	color: $primary;
+	color: $mainblue;
+	font-weight: 400;
 	&:hover {
-        color: lighten( $primary, 30% );
+        color: lighten( $mainblue, 30% );
     }
 }
 
-.registernav{
+.action-btn{
 	padding-top: 8px;
 	padding-bottom: 5px;
 }
+
+.cued-logo-nav{
+	width: 45px;
+  	padding-right: 15px;
+}
+
+img.nextstepgo-logo-nav{
+	width: 170px;
+}
+
+
 
 /**************************** Login Page *********************************/
 .login-bg {
@@ -97,13 +146,13 @@ nav{
 .passwordhelp {
 	color: rgba(118,118,118,1.00);
 	&:hover {
-		color: darken($mutedgrey, 30% );
+		color: darken($dkgrey, 30% );
 	}
 }
 
 .min-imput{
 	border: none;
-	border-bottom: 1px solid $mutedgrey;
+	border-bottom: 1px solid $dkgrey;
 	border-radius: 0px;
 	background-color: rgba(255,255,255,0.00);
 	&:focus{
@@ -121,16 +170,20 @@ nav{
 
 .submitbutton {
 	width: 100%;
-	background-color: $success;
-	&:hover {
-        background-color: darken( $success, 10% );
-    }
 	border: none;
 	margin-top: 20px;
+	&:hover {
+        background-color: darken($maingreen, 10% )!important;
+		color: white;
+    }
 }
 
 .registerbutton {
 	width: 100%;
+	&:hover {
+        background-color: $mainblue!important;
+		color: white;
+    }
 }
 
 .cued-attr{
@@ -173,7 +226,7 @@ nav{
 }
 
 
-/* Register */
+/*************************** Register *********************************/
 
 .gearsimg{
 	width: 80%;
@@ -202,7 +255,7 @@ footer{
 }
 
 
-/* Dashboard */
+/****************************** Dashboard ******************************/
 
 .welcome-business { 
 	font-size: 20px;
@@ -230,7 +283,7 @@ footer{
 	font-size: 9px;
 }
 
-/*Career Clusters */
+/******************************Career Clusters ********************************/
 .finance-cluster{
 	color:rgba(37,101,47,1.00);
 }
@@ -247,11 +300,11 @@ footer{
 	color:rgba(0,121,141,1.00);
 }
 
-/* Media Breakpoints */
+/***************************** Media Breakpoints *********************************/
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) { 
-	.registernav{
+	.action-btn{
 		margin-left: 30px;
 	}
 }
