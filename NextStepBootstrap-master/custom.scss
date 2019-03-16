@@ -1,0 +1,170 @@
+/* Scss Document */
+
+@import url("https://use.typekit.net/dpv5gwp.css");
+
+/*IMAGES*/
+
+$greengraphic: "images/loginbg.jpg";
+
+
+
+/* Body Setup */
+body, html {
+	height: 100%;
+}
+
+/* COLORS */
+$success: #81C341;
+$primary: #102B3F;
+$mutedgrey: #3E3E3E;
+
+/* FONTS */
+
+h1, h2, h3, h4, h5, h6{
+	font-family: forma-djr-text, sans-serif;
+	font-weight: 700;
+}
+
+p {
+	font-family: proxima-nova, sans-serif;
+	font-weight: 300;
+}
+
+a {
+	text-decoration: none;
+	&:hover{
+		color: lighten( $primary, 20% );
+		text-decoration: none;
+	}
+}
+
+
+/* Navbar */
+.navbar.navlogin.navbar-default {
+	margin-bottom: 0px;
+}
+nav{
+	font-family: forma-djr-text, sans-serif;
+		font-weight: 300;
+	-webkit-box-shadow: 7px 9px 16px 1px rgba(0,0,0,0.27);
+	-moz-box-shadow: 7px 9px 16px 1px rgba(0,0,0,0.27);
+	box-shadow: 7px 9px 16px 1px rgba(0,0,0,0.27);
+}
+
+.navbar{
+	padding-top: 11px;
+}
+.nav-link{
+	color: $primary;
+	&:hover {
+        color: lighten( $primary, 30% );
+    }
+}
+
+.registernav{
+	padding-top: 8px;
+	padding-bottom: 5px;
+}
+
+/* Login Page */
+.login-bg {
+	height: 85%;
+	background-image: url($greengraphic);
+	background-size: 110% 120%;
+}
+
+.login-panel{
+	background-color: white;
+	padding: 30px;
+	margin-top: 10%;
+	-webkit-box-shadow: 0px 9px 16px 1px rgba(0,0,0,0.17);
+	-moz-box-shadow: 0px 9px 16px 1px rgba(0,0,0,0.17);
+	box-shadow: 0px 9px 16px 1px rgba(0,0,0,0.17);
+}
+
+.login-row {
+	height: 100%;
+}
+
+.loginheader{
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.passwordhelp{
+	color: $mutedgrey;
+	&:hover {
+		color: lighten($mutedgrey, 30% );
+	}
+}
+
+.submitbutton {
+	width: 100%;
+	background-color: $success;
+	&:hover {
+        background-color: darken( $success, 10% );
+    }
+	border: none;
+	margin-top: 20px;
+}
+
+.registerbutton {
+	width: 100%;
+	background-color: $primary;
+	&:hover {
+        background-color: darken( $primary, 10% );
+    }
+	border: none;
+	margin-top: 20px;
+}
+
+.cued-attr{
+	display: inline;
+	color: white;
+	font-size: 14px;
+	padding-right: 7px;
+}
+
+.cued-logo{
+	width: 40px;
+	padding-right: 15px;
+}
+
+
+/* Register */
+
+.gearsimg{
+	width: 80%;
+	margin-left: 15%;
+}
+
+.footerimgmd {
+	width: 50px;
+}
+
+.mastfoot{
+	margin-top: 10%!important;
+}
+
+.negmargin {
+	margin-top: -15px;
+}
+
+/*Footer */
+footer{
+	padding: 10px;
+}
+
+.footerlogo{
+	text-align: right;
+}
+
+
+/* Media Breakpoints */
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+	.registernav{
+		margin-left: 30px;
+	}
+}
